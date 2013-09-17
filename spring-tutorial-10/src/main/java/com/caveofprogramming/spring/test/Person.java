@@ -19,6 +19,10 @@ public class Person {
 	public void speak() {
 		System.out.println("Hello! I'm a person.");
 	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public void setTaxId(int taxId) {
 		this.taxId = taxId;
@@ -34,5 +38,4 @@ public class Person {
 				+ ", address=" + address + "]";
 	}
 
-	
 }
