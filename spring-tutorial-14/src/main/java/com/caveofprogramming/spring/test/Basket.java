@@ -4,11 +4,11 @@ import java.util.List;
 
 public class Basket {
 	private String name;
-	private List<String> fruits;
+	private List<String> items;
 	
-	public Basket(String name, List<String> fruits) {
+	public Basket(String name, List<String> items) {
 		this.name = name;
-		this.fruits = fruits;
+		this.items = items;
 	}
 	
 	public String toString() {
@@ -17,8 +17,8 @@ public class Basket {
 		sb.append(name);
 		sb.append(" contains:\n");
 		
-		for(String fruit: fruits) {
-			sb.append(fruit);
+		for(String item: items) {
+			sb.append(item);
 			sb.append("\n");
 		}
 		
