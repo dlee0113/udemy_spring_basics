@@ -2,17 +2,15 @@ package com.caveofprogramming.spring.test;
 
 public class Address {
 	private String street;
-	private String postcode;
+	private String zipcode;
 	
-	public Address(String street, String postcode) {
+	public Address(String street, String zipcode) {
 		this.street = street;
-		this.postcode = postcode;
+		this.zipcode = zipcode;
 	}
 
 	@Override
 	public String toString() {
-		return "Address [street=" + street + ", postcode=" + postcode + "]";
+		return "Address [street=" + street + ", zipcode=" + zipcode + "]";
 	}
-	
-	
 }
