@@ -7,8 +7,7 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext context = new FileSystemXmlApplicationContext("beans.xml");
 		
-		Person person = (Person)context.getBean("person");
-		person.talk();
+		Dog dog = (Dog)context.getBean("dog");
+		dog.makeSound();
 	}
-
 }
