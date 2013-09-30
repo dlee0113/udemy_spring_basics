@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<!-- Attributes of AnimalSound are autowired based on type using setters -->
 	<bean id="animalSound" class="com.caveofprogramming.spring.test.AnimalSound" autowire="byType">
 	</bean>
 
@@ -10,5 +11,8 @@
 	</bean>
 
 	<bean id="cat" class="com.caveofprogramming.spring.test.Cat">
+	</bean>
+	
+	<bean id="bird" class="com.caveofprogramming.spring.test.Bird">
 	</bean>
 </beans>
