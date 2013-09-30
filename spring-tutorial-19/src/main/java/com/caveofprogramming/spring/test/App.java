@@ -9,11 +9,11 @@ public class App {
 	public static void main(String[] args) {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/caveofprogramming/spring/test/beans/beans.xml");
+		AnimalSound animalSound = (AnimalSound)context.getBean("animalSound");
 		
-		AnimalSound animal = (AnimalSound)context.getBean("animalSound");
-		
-		animal.makeDogSound("woof");
-		animal.makeCatSound("nya");
+		animalSound.makeDogSound();
+		animalSound.makeCatSound();
+		animalSound.makeBirdSound();
 		
 		((ClassPathXmlApplicationContext)context).close();
 	}

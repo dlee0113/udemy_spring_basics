@@ -4,7 +4,8 @@ package com.caveofprogramming.spring.test;
 public class AnimalSound {
 	private Dog dog;
 	private Cat cat;
-
+	private Bird bird;
+	
 	public void setDog(Dog dog) {
 		this.dog = dog;
 	}
@@ -13,11 +14,19 @@ public class AnimalSound {
 		this.cat = cat;
 	}
 	
-	public void makeDogSound(String sound) {
-		dog.makeSound(sound);
+	public void setBird(Bird bird) {
+		this.bird = bird;
 	}
 	
-	public void makeCatSound(String sound) {
-		cat.makeSound(sound);
+	public void makeDogSound() {
+		dog.makeSound();
+	}
+	
+	public void makeCatSound() {
+		cat.makeSound();
+	}
+	
+	public void makeBirdSound() {
+		bird.makeSound();
 	}
 }
