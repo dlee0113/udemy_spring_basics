@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Spring container looks at the properties of the beans on which autowire
+		 attribute is set to byName in the XML configuration file.  -->
+	<bean id="logger" class="com.caveofprogramming.spring.test.Logger" autowire="byName">
+	</bean>
+
+	<!-- Bean name "conOut" is the same as name of a property of Logger class. -->
+	<bean id="conOut" class="com.caveofprogramming.spring.test.ConsoleOutput">
+	</bean>
+</beans>
